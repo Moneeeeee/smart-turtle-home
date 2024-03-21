@@ -1,0 +1,3 @@
+C:/Users/Monee/Documents/Electronic-Design/Project/Turtles/STM32/cmake-build-debug/CMakeFiles/STM32.elf.dir
+C:/Users/Monee/Documents/Electronic-Design/Project/Turtles/STM32/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Monee/Documents/Electronic-Design/Project/Turtles/STM32/cmake-build-debug/CMakeFiles/rebuild_cache.dir
