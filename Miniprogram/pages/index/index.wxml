@@ -1,0 +1,127 @@
+<!-- index.wxml -->
+<view class="page-container">
+
+<!-- 头部部分 -->
+<view class="header-container">
+  <view class="header-air">
+    <view>
+      空气质量 - 良
+    </view>
+    <view>
+      
+    </view>
+  </view>
+  <view class="header-title">
+    <view>
+      60 
+    </view>
+    <view>
+      🐢
+    </view>
+  </view>
+  <view class="header-ad">
+    <view>
+      今天天气不错
+    </view>
+  </view>
+</view>
+
+<!-- 数据部分 -->
+<view class="data-container">
+  <!-- 数据卡片 -->
+  <!-- 水温 -->
+  <view class="data-card">
+    <image class="data-card_icon" src="/icon/tem.png"/>
+    <view>
+      <view class="data-card_title">
+        水温
+      </view>
+      <view class="data-card_value">
+        {{Temp}} ℃
+      </view>
+    </view>
+  </view>
+  <!-- 水质 -->
+  <view class="data-card">
+    <image class="data-card_icon" src="/icon/hum.png"/>
+    <view>
+      <view class="data-card_title">
+        水质
+      </view>
+      <view class="data-card_value">
+        {{Hum}} ％
+      </view>
+    </view>
+  </view>
+  <!-- 光照度 -->
+  <view class="data-card">
+    <image class="data-card_icon" src="/icon/mq2.png"/>
+    <view>
+      <view class="data-card_title">
+        光照度
+      </view>
+      <view class="data-card_value">
+        {{MQ2}}
+      </view>
+    </view>
+  </view>
+  <!-- 出逃警告 -->
+  <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/runaway.png"/>
+    <view>
+      <view class="data-card_title">
+        出逃警告
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{LED}}" bindchange="onLEDChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+  <!-- UAV光照 -->
+  <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/gas_OFF.png"/>
+    <view>
+      <view class="data-card_title">
+        UAV光照
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{Steer}}" bindchange="onSTEERChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+  <!-- UBV光照 -->
+  <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/fan_OFF.png"/>
+    <view>
+      <view class="data-card_title">
+        UBV光照
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{FUN}}" bindchange="onFUNChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+   <!-- 定时投喂 -->
+   <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/water.png"/>
+    <view>
+      <view class="data-card_title">
+        定时投喂
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{Water}}" bindchange="onWATERChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+</view>
+ <!-- 出逃检测阈值（随体重改变） -->
+ <view class="data-card"> 
+        <view class="data-card_title">
+            出逃检测阈值（随体重改变）
+        </view>
+        <view class="data-card_value">
+            <slider value="{{tem_threshold}}" bindchange="onTEMThresholdChange" min="0" max="100" step="1" />
+        </view>
+    </view>
+
+</view>
