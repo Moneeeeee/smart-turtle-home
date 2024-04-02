@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Turtles\STM32
+CMAKE_SOURCE_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Turtles\STM32\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Monee\Documents\Electronic-Design\Project\Turtles\STM32\cmake-build-debug\CMakeFiles C:\Users\Monee\Documents\Electronic-Design\Project\Turtles\STM32\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\cmake-build-debug\CMakeFiles C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Monee\Documents\Electronic-Design\Project\Turtles\STM32\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,126 @@ STM32.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/build
 .PHONY : STM32.elf/fast
 
+Core/Src/DS18B20.obj: Core/Src/DS18B20.c.obj
+.PHONY : Core/Src/DS18B20.obj
+
+# target to build an object file
+Core/Src/DS18B20.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj
+.PHONY : Core/Src/DS18B20.c.obj
+
+Core/Src/DS18B20.i: Core/Src/DS18B20.c.i
+.PHONY : Core/Src/DS18B20.i
+
+# target to preprocess a source file
+Core/Src/DS18B20.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.i
+.PHONY : Core/Src/DS18B20.c.i
+
+Core/Src/DS18B20.s: Core/Src/DS18B20.c.s
+.PHONY : Core/Src/DS18B20.s
+
+# target to generate assembly for a file
+Core/Src/DS18B20.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.s
+.PHONY : Core/Src/DS18B20.c.s
+
+Core/Src/OLED.obj: Core/Src/OLED.c.obj
+.PHONY : Core/Src/OLED.obj
+
+# target to build an object file
+Core/Src/OLED.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/OLED.c.obj
+.PHONY : Core/Src/OLED.c.obj
+
+Core/Src/OLED.i: Core/Src/OLED.c.i
+.PHONY : Core/Src/OLED.i
+
+# target to preprocess a source file
+Core/Src/OLED.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/OLED.c.i
+.PHONY : Core/Src/OLED.c.i
+
+Core/Src/OLED.s: Core/Src/OLED.c.s
+.PHONY : Core/Src/OLED.s
+
+# target to generate assembly for a file
+Core/Src/OLED.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/OLED.c.s
+.PHONY : Core/Src/OLED.c.s
+
+Core/Src/TDS.obj: Core/Src/TDS.c.obj
+.PHONY : Core/Src/TDS.obj
+
+# target to build an object file
+Core/Src/TDS.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.obj
+.PHONY : Core/Src/TDS.c.obj
+
+Core/Src/TDS.i: Core/Src/TDS.c.i
+.PHONY : Core/Src/TDS.i
+
+# target to preprocess a source file
+Core/Src/TDS.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.i
+.PHONY : Core/Src/TDS.c.i
+
+Core/Src/TDS.s: Core/Src/TDS.c.s
+.PHONY : Core/Src/TDS.s
+
+# target to generate assembly for a file
+Core/Src/TDS.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.s
+.PHONY : Core/Src/TDS.c.s
+
+Core/Src/adc.obj: Core/Src/adc.c.obj
+.PHONY : Core/Src/adc.obj
+
+# target to build an object file
+Core/Src/adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj
+.PHONY : Core/Src/adc.c.obj
+
+Core/Src/adc.i: Core/Src/adc.c.i
+.PHONY : Core/Src/adc.i
+
+# target to preprocess a source file
+Core/Src/adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/adc.c.i
+.PHONY : Core/Src/adc.c.i
+
+Core/Src/adc.s: Core/Src/adc.c.s
+.PHONY : Core/Src/adc.s
+
+# target to generate assembly for a file
+Core/Src/adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/adc.c.s
+.PHONY : Core/Src/adc.c.s
+
+Core/Src/cJSON.obj: Core/Src/cJSON.c.obj
+.PHONY : Core/Src/cJSON.obj
+
+# target to build an object file
+Core/Src/cJSON.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/cJSON.c.obj
+.PHONY : Core/Src/cJSON.c.obj
+
+Core/Src/cJSON.i: Core/Src/cJSON.c.i
+.PHONY : Core/Src/cJSON.i
+
+# target to preprocess a source file
+Core/Src/cJSON.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/cJSON.c.i
+.PHONY : Core/Src/cJSON.c.i
+
+Core/Src/cJSON.s: Core/Src/cJSON.c.s
+.PHONY : Core/Src/cJSON.s
+
+# target to generate assembly for a file
+Core/Src/cJSON.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/cJSON.c.s
+.PHONY : Core/Src/cJSON.c.s
+
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
 
@@ -152,30 +272,6 @@ Core/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
 
-Core/Src/i2c.obj: Core/Src/i2c.c.obj
-.PHONY : Core/Src/i2c.obj
-
-# target to build an object file
-Core/Src/i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/i2c.c.obj
-.PHONY : Core/Src/i2c.c.obj
-
-Core/Src/i2c.i: Core/Src/i2c.c.i
-.PHONY : Core/Src/i2c.i
-
-# target to preprocess a source file
-Core/Src/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/i2c.c.i
-.PHONY : Core/Src/i2c.c.i
-
-Core/Src/i2c.s: Core/Src/i2c.c.s
-.PHONY : Core/Src/i2c.s
-
-# target to generate assembly for a file
-Core/Src/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/i2c.c.s
-.PHONY : Core/Src/i2c.c.s
-
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -199,6 +295,30 @@ Core/Src/main.s: Core/Src/main.c.s
 Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
+
+Core/Src/retarget.obj: Core/Src/retarget.c.obj
+.PHONY : Core/Src/retarget.obj
+
+# target to build an object file
+Core/Src/retarget.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/retarget.c.obj
+.PHONY : Core/Src/retarget.c.obj
+
+Core/Src/retarget.i: Core/Src/retarget.c.i
+.PHONY : Core/Src/retarget.i
+
+# target to preprocess a source file
+Core/Src/retarget.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/retarget.c.i
+.PHONY : Core/Src/retarget.c.i
+
+Core/Src/retarget.s: Core/Src/retarget.c.s
+.PHONY : Core/Src/retarget.s
+
+# target to generate assembly for a file
+Core/Src/retarget.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/retarget.c.s
+.PHONY : Core/Src/retarget.c.s
 
 Core/Src/stm32f1xx_hal_msp.obj: Core/Src/stm32f1xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f1xx_hal_msp.obj
@@ -320,6 +440,30 @@ Core/Src/system_stm32f1xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f1xx.c.s
 .PHONY : Core/Src/system_stm32f1xx.c.s
 
+Core/Src/tim.obj: Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.obj
+
+# target to build an object file
+Core/Src/tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.c.obj
+
+Core/Src/tim.i: Core/Src/tim.c.i
+.PHONY : Core/Src/tim.i
+
+# target to preprocess a source file
+Core/Src/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/tim.c.i
+.PHONY : Core/Src/tim.c.i
+
+Core/Src/tim.s: Core/Src/tim.c.s
+.PHONY : Core/Src/tim.s
+
+# target to generate assembly for a file
+Core/Src/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/tim.c.s
+.PHONY : Core/Src/tim.c.s
+
 Core/Src/usart.obj: Core/Src/usart.c.obj
 .PHONY : Core/Src/usart.obj
 
@@ -375,6 +519,54 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s: Drivers/STM32F1xx_HAL_Driver/S
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj
@@ -544,30 +736,6 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s
 
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
-
-# target to build an object file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
-
-# target to preprocess a source file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
-
-# target to generate assembly for a file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
-
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
 
@@ -712,6 +880,78 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 
+NET/MqttKit.obj: NET/MqttKit.c.obj
+.PHONY : NET/MqttKit.obj
+
+# target to build an object file
+NET/MqttKit.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/MqttKit.c.obj
+.PHONY : NET/MqttKit.c.obj
+
+NET/MqttKit.i: NET/MqttKit.c.i
+.PHONY : NET/MqttKit.i
+
+# target to preprocess a source file
+NET/MqttKit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/MqttKit.c.i
+.PHONY : NET/MqttKit.c.i
+
+NET/MqttKit.s: NET/MqttKit.c.s
+.PHONY : NET/MqttKit.s
+
+# target to generate assembly for a file
+NET/MqttKit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/MqttKit.c.s
+.PHONY : NET/MqttKit.c.s
+
+NET/esp8266.obj: NET/esp8266.c.obj
+.PHONY : NET/esp8266.obj
+
+# target to build an object file
+NET/esp8266.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/esp8266.c.obj
+.PHONY : NET/esp8266.c.obj
+
+NET/esp8266.i: NET/esp8266.c.i
+.PHONY : NET/esp8266.i
+
+# target to preprocess a source file
+NET/esp8266.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/esp8266.c.i
+.PHONY : NET/esp8266.c.i
+
+NET/esp8266.s: NET/esp8266.c.s
+.PHONY : NET/esp8266.s
+
+# target to generate assembly for a file
+NET/esp8266.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/esp8266.c.s
+.PHONY : NET/esp8266.c.s
+
+NET/onenet.obj: NET/onenet.c.obj
+.PHONY : NET/onenet.obj
+
+# target to build an object file
+NET/onenet.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/onenet.c.obj
+.PHONY : NET/onenet.c.obj
+
+NET/onenet.i: NET/onenet.c.i
+.PHONY : NET/onenet.i
+
+# target to preprocess a source file
+NET/onenet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/onenet.c.i
+.PHONY : NET/onenet.c.i
+
+NET/onenet.s: NET/onenet.c.s
+.PHONY : NET/onenet.s
+
+# target to generate assembly for a file
+NET/onenet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/NET/onenet.c.s
+.PHONY : NET/onenet.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -721,15 +961,30 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... STM32.elf
+	@echo ... Core/Src/DS18B20.obj
+	@echo ... Core/Src/DS18B20.i
+	@echo ... Core/Src/DS18B20.s
+	@echo ... Core/Src/OLED.obj
+	@echo ... Core/Src/OLED.i
+	@echo ... Core/Src/OLED.s
+	@echo ... Core/Src/TDS.obj
+	@echo ... Core/Src/TDS.i
+	@echo ... Core/Src/TDS.s
+	@echo ... Core/Src/adc.obj
+	@echo ... Core/Src/adc.i
+	@echo ... Core/Src/adc.s
+	@echo ... Core/Src/cJSON.obj
+	@echo ... Core/Src/cJSON.i
+	@echo ... Core/Src/cJSON.s
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
-	@echo ... Core/Src/i2c.obj
-	@echo ... Core/Src/i2c.i
-	@echo ... Core/Src/i2c.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
+	@echo ... Core/Src/retarget.obj
+	@echo ... Core/Src/retarget.i
+	@echo ... Core/Src/retarget.s
 	@echo ... Core/Src/stm32f1xx_hal_msp.obj
 	@echo ... Core/Src/stm32f1xx_hal_msp.i
 	@echo ... Core/Src/stm32f1xx_hal_msp.s
@@ -745,6 +1000,9 @@ help:
 	@echo ... Core/Src/system_stm32f1xx.obj
 	@echo ... Core/Src/system_stm32f1xx.i
 	@echo ... Core/Src/system_stm32f1xx.s
+	@echo ... Core/Src/tim.obj
+	@echo ... Core/Src/tim.i
+	@echo ... Core/Src/tim.s
 	@echo ... Core/Src/usart.obj
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s
@@ -752,6 +1010,12 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i
+	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.s
@@ -773,9 +1037,6 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.s
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.obj
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.i
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.s
@@ -794,6 +1055,15 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+	@echo ... NET/MqttKit.obj
+	@echo ... NET/MqttKit.i
+	@echo ... NET/MqttKit.s
+	@echo ... NET/esp8266.obj
+	@echo ... NET/esp8266.i
+	@echo ... NET/esp8266.s
+	@echo ... NET/onenet.obj
+	@echo ... NET/onenet.i
+	@echo ... NET/onenet.s
 .PHONY : help
 
 
