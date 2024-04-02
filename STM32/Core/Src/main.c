@@ -81,6 +81,7 @@ int main(void)
     unsigned char *dataPtr = NULL;
     uint16_t count = 0;
 
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,35 +110,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
 //  RetargetInit(&huart1);
 
-
-//  printf("USART1 Init OK!\r\n");
-//  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
-//  ESP01S_Init();  //8266初始
-//  while(OneNet_DevLink())  //接入onenet
-//  ESP01S_Clear();    //*/
-//  OneNet_Subscribe(devSubTopic, 1);
-
-//    OLED_ShowString(10,7,"Tem",12);
-//    OLED_ShowString(40,7,"Hum",12);
-//    OLED_ShowString(70,7,"MQ2",12);
-//    OLED_ShowString(100,7,"MQ4",12);
-//
-//    OLED_ShowString(80,0,"TemT:", 12);
-//    OLED_ShowString(80, 2, "MQ2T:", 12);
-//    OLED_ShowString(80, 4, "MQ4T:", 12);
     OLED_Init();
+    DS18B20_Init_Check();
     OLED_Clear();
-//
-    if (DS18B20_Init() == 0)
-    {
-        OLED_ShowString(24,0,"DS18B20 OK!",12);
-    }
-    else if (DS18B20_Init() == 1)
-    {
-        OLED_ShowString(12,2,"DS18B20 Fail",12);
-    }
-    HAL_Delay(1000);
-
 //    OLED_ShowNum(0,0,1,16,12);
 
 //    DWT_Delay_Init();
@@ -148,43 +123,32 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
+    HAL_GPIO_WritePin(ULN_1_GPIO_Port,ULN_1_Pin,GPIO_PIN_SET);
+    HAL_GPIO_WritePin(ULN_2_GPIO_Port,ULN_2_Pin,GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(ULN_3_GPIO_Port,ULN_3_Pin,GPIO_PIN_SET);
+    HAL_GPIO_WritePin(ULN_4_GPIO_Port,ULN_4_Pin,GPIO_PIN_SET);
   while (1)
   {
 //      OLED_ShowString(24,0,"Init OK",12);
       HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_10);
-      DS18B20_GetTemperature(); //获取温度
+      HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+
+      HAL_GPIO_TogglePin(ULN_1_GPIO_Port,ULN_1_Pin);
+      HAL_GPIO_TogglePin(ULN_2_GPIO_Port,ULN_2_Pin);
+      HAL_GPIO_TogglePin(ULN_3_GPIO_Port,ULN_3_Pin);
+      HAL_GPIO_TogglePin(ULN_4_GPIO_Port,ULN_4_Pin);
+
+//      temperature = DS18B20_Get_Temperature();
+//      OLED_ShowNum(0,0,temperature/10,2,16);
+
+//      TDS_Check();
+//      OLED_ShowNum(0,2,TDS,2,16);
+
+//      Read_Weigh();
+//      OLED_ShowNum(0,2,(uint32_t)Read_Weigh(),8,16);
 
 
-
-//      printf("------Get Temperature------\r\n");
-//      printf("%d-Temp:%d\r\n", count++, DS18B20_TempDataStruct.TempDataAll);
-//      printf("Hun:%d\r\n", DS18B20_TempDataStruct.Hun);
-//      printf("Tens:%d\r\n", DS18B20_TempDataStruct.Tens);
-//      printf("Unit:%d\r\n", DS18B20_TempDataStruct.Unit);
-//      printf("Decimals1:%d\r\n", DS18B20_TempDataStruct.Decimals1);
-//      printf("Decimals2:%d\r\n", DS18B20_TempDataStruct.Decimals2);
-//      printf("---All the temperature data!---\r\n");
-
-
-
-      OLED_ShowNum(0,0,DS18B20_TempDataStruct.Decimals1*100,16,12);
-      HAL_Delay(100);
-
-//      if(++timeCount >= 100)
-//      {
-////          sprintf(PUB_BUF,"{\"Temp\":%d,\"Hum\":%d,\"MQ2\":%d,\"MQ4\":%d}",
-////                  temperature,humidity,ADC_MQ2,ADC_MQ4);
-//          OneNet_Publish(devPubTopic, PUB_BUF);
-//
-//          timeCount = 0;
-//          ESP01S_Clear();
-//      }
-//
-//      dataPtr = ESP01S_GetIPD(3);
-//      if(dataPtr != NULL)
-//          OneNet_RevPro(dataPtr);
-////
-//      HAL_Delay(10);
+      HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 
@@ -256,7 +220,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 //        if(aRxBuffer=='0')  HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
     }
 
-    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�??????????????????????????????????????????????
+    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�?????????????????????????????????????????????????
 }
 
 /* USER CODE END 4 */

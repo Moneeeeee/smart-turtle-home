@@ -35,6 +35,7 @@ extern "C" {
 #include "usart.h"
 #include "gpio.h"
 #include "tim.h"
+#include "adc.h"
 //#include "core_cm4.h" // 根据你的MCU核心调整，例如STM32F4系列是CM4
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -46,6 +47,8 @@ extern "C" {
 #include "string.h"
 #include "math.h"
 #include "DS18B20.h"
+#include "TDS.h"
+#include "HX711.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -81,8 +84,8 @@ void Error_Handler(void);
 #define BUZZER_GPIO_Port GPIOB
 #define HX117_SCL_Pin GPIO_PIN_1
 #define HX117_SCL_GPIO_Port GPIOB
-#define HX117_SDA_Pin GPIO_PIN_2
-#define HX117_SDA_GPIO_Port GPIOB
+#define HX711_SDA_Pin GPIO_PIN_2
+#define HX711_SDA_GPIO_Port GPIOB
 #define ULN_2_Pin GPIO_PIN_13
 #define ULN_2_GPIO_Port GPIOB
 #define ULN_4_Pin GPIO_PIN_14

@@ -40,6 +40,7 @@ CMakeFiles/STM32.elf.dir/NET/esp8266.c.obj: \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/usart.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/gpio.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/tim.h \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/adc.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/retarget.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stat.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
@@ -82,5 +83,7 @@ CMakeFiles/STM32.elf.dir/NET/esp8266.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\math.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/DS18B20.h \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/TDS.h \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/HX711.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\NET\esp8266.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/usart.h

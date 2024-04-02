@@ -152,6 +152,30 @@ Core/Src/DS18B20.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.s
 .PHONY : Core/Src/DS18B20.c.s
 
+Core/Src/HX711.obj: Core/Src/HX711.c.obj
+.PHONY : Core/Src/HX711.obj
+
+# target to build an object file
+Core/Src/HX711.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/HX711.c.obj
+.PHONY : Core/Src/HX711.c.obj
+
+Core/Src/HX711.i: Core/Src/HX711.c.i
+.PHONY : Core/Src/HX711.i
+
+# target to preprocess a source file
+Core/Src/HX711.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/HX711.c.i
+.PHONY : Core/Src/HX711.c.i
+
+Core/Src/HX711.s: Core/Src/HX711.c.s
+.PHONY : Core/Src/HX711.s
+
+# target to generate assembly for a file
+Core/Src/HX711.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/HX711.c.s
+.PHONY : Core/Src/HX711.c.s
+
 Core/Src/OLED.obj: Core/Src/OLED.c.obj
 .PHONY : Core/Src/OLED.obj
 
@@ -964,6 +988,9 @@ help:
 	@echo ... Core/Src/DS18B20.obj
 	@echo ... Core/Src/DS18B20.i
 	@echo ... Core/Src/DS18B20.s
+	@echo ... Core/Src/HX711.obj
+	@echo ... Core/Src/HX711.i
+	@echo ... Core/Src/HX711.s
 	@echo ... Core/Src/OLED.obj
 	@echo ... Core/Src/OLED.i
 	@echo ... Core/Src/OLED.s

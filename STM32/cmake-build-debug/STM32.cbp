@@ -101,6 +101,9 @@
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h">
 			<Option target="STM32.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h">
+			<Option target="STM32.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h">
 			<Option target="STM32.elf"/>
 		</Unit>
@@ -138,6 +141,9 @@
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/DS18B20.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/HX711.c">
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/OLED.c">

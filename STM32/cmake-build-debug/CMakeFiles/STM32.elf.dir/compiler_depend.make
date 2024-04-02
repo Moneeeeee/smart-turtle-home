@@ -3,7 +3,95 @@
 
 CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/DS18B20.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/stm32f1xx_hal_conf.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/tim.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/usart.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/cmsis_compiler.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/cmsis_gcc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/cmsis_version.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/core_cm3.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/Common.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/MqttKit.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/esp8266.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/onenet.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/alloca.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_endian.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/endian.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/stdlib.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/time.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/math.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/newlib.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdio.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdlib.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/string.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/strings.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_locale.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_pthreadtypes.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_sigset.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_timespec.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_timeval.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/config.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/sched.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/select.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/stat.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/stdio.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/string.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/timespec.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/time.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+
+CMakeFiles/STM32.elf.dir/Core/Src/HX711.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/HX711.c \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -85,8 +173,11 @@ CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj: C:/Users/Monee/Documents/Electr
 
 CMakeFiles/STM32.elf.dir/Core/Src/OLED.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/OLED.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED_Font.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -166,11 +257,96 @@ CMakeFiles/STM32.elf.dir/Core/Src/OLED.c.obj: C:/Users/Monee/Documents/Electroni
   C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
   C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
-CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/TDS.c
+CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/TDS.c \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/stm32f1xx_hal_conf.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/tim.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/usart.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/cmsis_compiler.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/cmsis_gcc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/cmsis_version.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Include/core_cm3.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/Common.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/MqttKit.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/esp8266.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/onenet.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/alloca.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_endian.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/endian.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/stdlib.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/time.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/math.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/newlib.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdio.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdlib.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/string.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/strings.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_locale.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_pthreadtypes.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_sigset.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_timespec.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_timeval.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/config.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/sched.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/select.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/stat.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/stdio.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/string.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/timespec.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/time.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/adc.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
@@ -298,7 +474,10 @@ CMakeFiles/STM32.elf.dir/Core/Src/cJSON.c.obj: C:/Users/Monee/Documents/Electron
 
 CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/gpio.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -380,7 +559,9 @@ CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj: C:/Users/Monee/Documents/Electroni
 
 CMakeFiles/STM32.elf.dir/Core/Src/main.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/main.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
@@ -534,7 +715,10 @@ CMakeFiles/STM32.elf.dir/Core/Src/retarget.c.obj: C:/Users/Monee/Documents/Elect
 
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/stm32f1xx_hal_msp.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -616,7 +800,10 @@ CMakeFiles/STM32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C:/Users/Monee/Docume
 
 CMakeFiles/STM32.elf.dir/Core/Src/stm32f1xx_it.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/stm32f1xx_it.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -800,7 +987,10 @@ CMakeFiles/STM32.elf.dir/Core/Src/system_stm32f1xx.c.obj: C:/Users/Monee/Documen
 
 CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/tim.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -882,7 +1072,10 @@ CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj: C:/Users/Monee/Documents/Electronic
 
 CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/usart.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -1595,7 +1788,10 @@ CMakeFiles/STM32.elf.dir/NET/MqttKit.c.obj: C:/Users/Monee/Documents/Electronic-
 
 CMakeFiles/STM32.elf.dir/NET/esp8266.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/esp8266.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h \
@@ -1678,7 +1874,10 @@ CMakeFiles/STM32.elf.dir/NET/esp8266.c.obj: C:/Users/Monee/Documents/Electronic-
 
 CMakeFiles/STM32.elf.dir/NET/onenet.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/onenet.c \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/OLED.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h \
+  C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/cJSON.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h \
   C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h \
@@ -1779,11 +1978,9 @@ C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Driv
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h:
 
-C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_timeval.h:
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h:
 
-C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/stm32f1xx_hal_conf.h:
-
-C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h:
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/HX711.h:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/esp8266.h:
 
@@ -1791,13 +1988,23 @@ C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Driv
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/gpio.h:
 
-C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/main.h:
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/TDS.h:
+
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/stm32f1xx_hal_conf.h:
+
+C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h:
+
+C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h:
+
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
+
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h:
+
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h:
 
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/math.h:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/tim.h:
-
-C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/retarget.h:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h:
 
@@ -1853,10 +2060,6 @@ C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:
 
-C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h:
-
-C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h:
-
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h:
@@ -1866,8 +2069,6 @@ C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Driv
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/time.h:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h:
-
-C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 
@@ -1903,7 +2104,11 @@ C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi
 
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_locale.h:
 
+C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h:
+
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_timespec.h:
+
+C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_timeval.h:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c:
 
@@ -1941,6 +2146,8 @@ C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-n
 
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h:
 
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/HX711.c:
+
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/OLED.c:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c:
@@ -1950,8 +2157,6 @@ C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/TDS.c:
 
 C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/adc.c:
-
-C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/adc.h:
 
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/float.h:
 
