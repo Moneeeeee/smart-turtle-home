@@ -8,8 +8,8 @@ const { connect } = require('../../utils/mqtt')
 const mqttHost = 'broker.emqx.io' // mqtt服务器域名
 const mqttPort = 8084 // mqtt服务器端口
 
-const deviceSubTopic = '/mysmartkitchen/sub' // 设备订阅topic
-const devicePubTopic = '/mysmartkitchen/pub' // 设备发布topic
+const deviceSubTopic = '/mysmartturtle/sub' // 设备订阅topic
+const devicePubTopic = '/mysmartturtle/pub' // 设备发布topic
 
 const mpSubTopic = devicePubTopic
 const mpPubTopic = deviceSubTopic
@@ -20,60 +20,69 @@ Page({
   data: {
     client: null,
     Temp:0,
-    Hum:0,
-    MQ2:0,
-    LED:false,
+    TDS:0,
+    Lumen:0,
+    Weight:0,
+    UVB:false,
+    UVA:false,
     Steer:false,
-    FUN:false,
     WATER:false,
     tem_threshold:0,
-    MQ2_threshold:0,
+    TDS_threshold:0,
+    Lumen_threshold:0,
   },
-  onLEDChange(event){
+
+  onUVAChange(event){
     const that  = this;
     const sw = event.detail.value;
-    that.setData({ LED: sw });
+    that.setData({ UVA: sw });
     // console.log(event.detail,value);
     // that.setData({LED:sw})
       that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "LED",
+        target: "UVA",
         value: sw ? 1 : 0
       }), function (err) {
         if (!err) {
-          console.log('成功下发指令：' + (sw ? '开灯' : '关灯'));
+          console.log('成功下发指令：' + (sw ? 'UVA:开启' : 'UVA:关闭'));
+        }
+    });
+  },
+  onUVBChange(event){
+    const that  = this;
+    const sw = event.detail.value;
+    that.setData({ UVB: sw });
+    // console.log(event.detail,value);
+    // that.setData({LED:sw})
+      that.data.client.publish(mpPubTopic, JSON.stringify({
+        target: "UVB",
+        value: sw ? 1 : 0
+      }), function (err) {
+        if (!err) {
+          console.log('成功下发指令：' + (sw ? 'UVB:开启' : 'UVB:关闭'));
         }
     });
   },
 
-  onSTEERChange(event){
-    const that  = this;
-    const sw = event.detail.value;
-    that.setData({ Steer: sw });
-    // console.log(event.detail,value);
-    // that.setData({LED:sw})
-      that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "Steer",
-        value: sw ? 1 : 0
-      }), function (err) {
-        if (!err) {
-          console.log('成功下发指令：' + (sw ? '打开管道' : '关闭管道'));
-        }
-    });
-  },
 
-  onFUNChange(event){
-    const that  = this;
-    const sw = event.detail.value;
-    that.setData({ FUN: sw });
-    // console.log(event.detail,value);
-    // that.setData({LED:sw})
-      that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "FUN",
-        value: sw ? 1 : 0
-      }), function (err) {
-        if (!err) {
-          console.log('成功下发指令：' + (sw ? '打开风扇' : '关闭风扇'));
-        }
+  onSTEERClick(event){
+    const that = this;
+    // 只发送信号，不需要更改Steer的值
+    that.data.client.publish(mpPubTopic, JSON.stringify({
+      target: "Steer",
+      value: 1 // 或者您可以选择发送一个特定的信号，代表“单次操作”
+    }), function (err) {
+      if (!err) {
+        console.log('成功下发单次投喂指令');
+        // 如果需要反馈到界面，可以在这里修改界面元素的显示
+        // 例如，显示一个Toast消息来告知用户
+        wx.showToast({
+          title: '投喂成功',
+          icon: 'success',
+          duration: 2000
+        });
+      } else {
+        // 处理错误情况
+      }
     });
   },
 
@@ -88,7 +97,7 @@ Page({
         value: sw ? 1 : 0
       }), function (err) {
         if (!err) {
-          console.log('成功下发指令：' + (sw ? '打开喷淋' : '关闭喷淋'));
+          console.log('成功下发指令：' + (sw ? '开启换水' : '关闭换水'));
         }
     });
   },
@@ -111,22 +120,36 @@ Page({
   },
   
 
-  onMQ2ThresholdChange(event) {
+  onTDSThresholdChange(event) {
     const that = this;
-    const MQ2_threshold_read = event.detail.value;
-    that.setData({ MQ2_threshold: MQ2_threshold_read });
+    const TDS_threshold_read = event.detail.value;
+    that.setData({ TDS_threshold: TDS_threshold_read });
     // console.log(event.detail,value);
     // that.setData({LED:sw})
       that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "MQ2_threshold",
-        value: MQ2_threshold_read
+        target: "TDS_threshold",
+        value: TDS_threshold_read
       }), function (err) {
         if (!err) {
-          console.log('成功下发阈值:', MQ2_threshold_read);
+          console.log('成功下发TDS阈值:', TDS_threshold_read);
         }
     });
   },
-  
+  onLumenThresholdChange(event) {
+    const that = this;
+    const Lumen_threshold_read = event.detail.value;
+    that.setData({ Lumen_threshold: Lumen_threshold_read });
+    // console.log(event.detail,value);
+    // that.setData({LED:sw})
+      that.data.client.publish(mpPubTopic, JSON.stringify({
+        target: "Lumen_threshold",
+        value: Lumen_threshold_read
+      }), function (err) {
+        if (!err) {
+          console.log('成功下发光照阈值:', Lumen_threshold_read);
+        }
+    });
+  },
   
   //事件处理函数
   onShow() {
@@ -164,8 +187,9 @@ Page({
 
         that.setData({
           Temp:dataFromDev.Temp,
-          Hum:dataFromDev.Hum,
-          MQ2:dataFromDev.MQ2,
+          TDS:dataFromDev.TDS,
+          Lumen:dataFromDev.Lumen,
+          Weight:dataFromDev.Weight,
           Steer:dataFromDev.Steer,
           Relay:dataFromDev.Relay,
           LED:dataFromDev.LED,

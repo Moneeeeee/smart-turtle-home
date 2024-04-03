@@ -25,6 +25,27 @@
   margin-top: 36;
   font-size: 24rpx;
 }
+.escape-warning {
+  background-color: #ff4444; /* 警告通常使用鲜明的颜色如红色 */
+  color: #fff;
+  border-radius: 36rpx;
+  padding: 20rpx 40rpx;
+  margin-top: 20rpx; /* 添加一些顶部外边距，与头部容器分开 */
+  text-align: center;
+  font-size: 28rpx;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 可选的：添加一些阴影效果 */
+}
+
+.safe-notice {
+  background-color: #008000; /* 警告通常使用鲜明的颜色如红色 */
+  color: #fff;
+  border-radius: 36rpx;
+  padding: 20rpx 40rpx;
+  margin-top: 20rpx; /* 添加一些顶部外边距，与头部容器分开 */
+  text-align: center;
+  font-size: 28rpx;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 可选的：添加一些阴影效果 */
+}
 
 .data-container{
   margin-top: 36rpx;
@@ -73,4 +94,38 @@
  font-size: 52rpx;
  font-weight: blod;
  color: #7f7f7f;
+}
+
+
+/* 在您的样式文件中添加这个部分 */
+.data-card_button {
+  background-color: #3d7ef9; /* 按钮背景颜色 */
+  color: white; /* 文字颜色 */
+  border: none; /* 移除边框 */
+  padding: 10rpx 20rpx;
+  border-radius: 5rpx; /* 圆角按钮 */
+  margin-top: 10rpx; /* 与其他元素的间隔 */
+  /* 其他可能需要的样式 */
+}
+
+
+.data-card_title {
+  text-align: center; /* 文本水平居中 */
+  font-size: 36rpx; /* 文本大小，根据需要调整 */
+  margin: 0 auto; /* 如果需要的话，可以通过自动外边距实现更好的居中效果 */
+  width: 100%; /* 确保标题宽度占满其容器，以便text-align有效 */
+  /* 添加一些垂直间距 */
+  padding: 10rpx 0; /* 上下填充，根据需要调整 */
+}
+
+.data-card_button {
+  /* 保留原有的按钮样式 */
+  background-color: #3d7ef9; /* 按钮背景颜色 */
+  color: white; /* 文字颜色 */
+  border: none; /* 移除边框 */
+  border-radius: 16rpx; /* 圆角按钮 */
+  /* 文本大小 */
+  font-size: 28rpx; /* 按钮内文本大小，根据需要调整 */
+  /* 按钮内填充，也可以根据需要调整来更好地调整按钮大小 */
+  padding: 20rpx 40rpx;
 }

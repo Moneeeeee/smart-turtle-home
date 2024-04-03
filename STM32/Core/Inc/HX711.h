@@ -13,7 +13,7 @@ extern uint32_t HX711_Buffer;
 extern uint32_t Weight_Maopi;
 extern uint32_t Weight_Shiwu;
 extern uint8_t Flag_Error;
-
+extern uint32_t Weight ;
 
 void ReadWeigh_Init(void);
 uint32_t Read_Weigh(void);

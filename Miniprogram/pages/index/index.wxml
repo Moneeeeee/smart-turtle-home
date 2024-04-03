@@ -16,7 +16,7 @@
       60 
     </view>
     <view>
-      🐢
+      Hi
     </view>
   </view>
   <view class="header-ad">
@@ -26,10 +26,21 @@
   </view>
 </view>
 
+
+
+  <!-- 逃离警告部分 -->
+  <view wx:if="{{  1}}" class="escape-warning">
+    逃离警告
+  </view>
+
+  <view wx:if="{{ 1}}" class="safe-notice">
+    安全状态
+  </view>
+
 <!-- 数据部分 -->
 <view class="data-container">
   <!-- 数据卡片 -->
-  <!-- 水温 -->
+  <!-- 温度 -->
   <view class="data-card">
     <image class="data-card_icon" src="/icon/tem.png"/>
     <view>
@@ -49,78 +60,111 @@
         水质
       </view>
       <view class="data-card_value">
-        {{Hum}} ％
+        {{TDS}} ％
       </view>
     </view>
   </view>
-  <!-- 光照度 -->
+  <!-- 烟雾 -->
   <view class="data-card">
     <image class="data-card_icon" src="/icon/mq2.png"/>
     <view>
       <view class="data-card_title">
-        光照度
+        光强 
       </view>
       <view class="data-card_value">
-        {{MQ2}}
+        {{Lumen}}
       </view>
     </view>
   </view>
-  <!-- 出逃警告 -->
+    <!-- 天燃气 -->
+    <view class="data-card">
+    <image class="data-card_icon" src="/icon/mq4.png"/>
+    <view>
+      <view class="data-card_title">
+       体重
+      </view>
+      <view class="data-card_value">
+        {{Weight}}
+      </view>
+    </view>
+  </view>
+  <!-- 灯光A -->
   <view class="data-card"> 
-    <image class="data-card_icon" src="/icon/runaway.png"/>
+    <image class="data-card_icon" src="/icon/light_OFF.png"/>
     <view>
       <view class="data-card_title">
-        出逃警告
+        UVA
       </view>
       <view class="data-card_value">
-        <switch checked="{{LED}}" bindchange="onLEDChange" color="#3d7ef9"/>
+        <switch checked="{{UVA}}" bindchange="onUVAChange" color="#3d7ef9"/>
       </view>
     </view>
   </view>
-  <!-- UAV光照 -->
-  <view class="data-card"> 
-    <image class="data-card_icon" src="/icon/gas_OFF.png"/>
+    <!-- 灯光N -->
+    <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/light_OFF.png"/>
     <view>
       <view class="data-card_title">
-        UAV光照
+        UVB
       </view>
       <view class="data-card_value">
-        <switch checked="{{Steer}}" bindchange="onSTEERChange" color="#3d7ef9"/>
+        <switch checked="{{UVB}}" bindchange="onUVBChange" color="#3d7ef9"/>
       </view>
     </view>
   </view>
-  <!-- UBV光照 -->
-  <view class="data-card"> 
-    <image class="data-card_icon" src="/icon/fan_OFF.png"/>
-    <view>
-      <view class="data-card_title">
-        UBV光照
-      </view>
-      <view class="data-card_value">
-        <switch checked="{{FUN}}" bindchange="onFUNChange" color="#3d7ef9"/>
-      </view>
+
+<!-- 卡片 -->
+<view class="data-card"> 
+  <image class="data-card_icon" src="/icon/gas_OFF.png"/>
+  <view class="data-card_info">
+    <view class="data-card_title">
     </view>
-  </view>
-   <!-- 定时投喂 -->
-   <view class="data-card"> 
-    <image class="data-card_icon" src="/icon/water.png"/>
-    <view>
-      <view class="data-card_title">
-        定时投喂
-      </view>
-      <view class="data-card_value">
-        <switch checked="{{Water}}" bindchange="onWATERChange" color="#3d7ef9"/>
-      </view>
+    <view class="data-card_value">
+      <!-- 添加一个按钮用于触发换水动作 -->
+      <button bindtap="onSTEERClick" class="data-card_button">投喂</button>
     </view>
   </view>
 </view>
- <!-- 出逃检测阈值（随体重改变） -->
+
+<!-- 卡片 -->
+<view class="data-card"> 
+  <image class="data-card_icon" src="/icon/water.png"/>
+  <view class="data-card_info">
+    <view class="data-card_title">
+    </view>
+    <view class="data-card_value">
+      <!-- 添加一个按钮用于触发换水动作 -->
+      <button bindtap="onSTEERClick" class="data-card_button">换水</button>
+    </view>
+  </view>
+</view>
+
+</view>
+ <!-- 温度滑块 -->
  <view class="data-card"> 
         <view class="data-card_title">
-            出逃检测阈值（随体重改变）
+            水温阈值
         </view>
         <view class="data-card_value">
             <slider value="{{tem_threshold}}" bindchange="onTEMThresholdChange" min="0" max="100" step="1" />
+        </view>
+    </view>
+ <!--天然气 滑块 -->
+ <view class="data-card"> 
+        <view class="data-card_title">
+          水质阈值
+        </view>
+        <view class="data-card_value">
+            <slider value="{{TDS_threshold}}" bindchange="onTDSThresholdChange" min="0" max="100" step="1" />
+        </view>
+    </view>
+ <!--烟雾 滑块 -->
+ <view class="data-card"> 
+        <view class="data-card_title">
+         光照阈值
+        </view>
+        <view class="data-card_value">
+            <slider value="{{Lumen_threshold}}" bindchange="onMQ2ThresholdChange" min="0" max="100" step="1" />
         </view>
     </view>
 

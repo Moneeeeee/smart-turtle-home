@@ -8,4 +8,5 @@
 void StepMotor_TakeStep(uint16_t pin);
 void Motor_Forward(void);
 void Motor_Backward(void);
+void Motor_Stop(void);
 #endif //STM32_ULN_H

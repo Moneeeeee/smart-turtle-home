@@ -47,3 +47,12 @@ void Motor_Backward(void)
         StepMotor_TakeStep(B_Rotation[i]);
     }
 }
+// 停止电机的函数现在将motorRunning设置为false
+void Motor_Stop(void)
+{
+    // 停止所有的引脚输出
+    HAL_GPIO_WritePin(ULN_1_GPIO_Port, ULN_1_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(ULN_2_GPIO_Port, ULN_2_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(ULN_3_GPIO_Port, ULN_3_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(ULN_4_GPIO_Port, ULN_4_Pin, GPIO_PIN_RESET);
+}

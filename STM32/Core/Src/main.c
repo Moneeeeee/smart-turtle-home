@@ -74,8 +74,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-    const char *devSubTopic[] = {"/mysmartkitchen/sub"};
-    const char devPubTopic[] = "/mysmartkitchen/pub";
+    const char *devSubTopic[] = {"/mysmartturtle/sub"};
+    const char devPubTopic[] = "/mysmartturtle/pub";
     unsigned short timeCount = 0;	//
     char PUB_BUF[128];//上传数据的PUB
     unsigned char *dataPtr = NULL;
@@ -120,11 +120,11 @@ int main(void)
 
 //    DS18B20_Init();
 
-  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
-  ESP01S_Init();  //8266初始
-  while(OneNet_DevLink())  //接入onenet
-  ESP01S_Clear();    //*/
-  OneNet_Subscribe(devSubTopic, 1);
+//  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
+//  ESP01S_Init();  //8266初始
+//  while(OneNet_DevLink())  //接入onenet
+//  ESP01S_Clear();    //*/
+//  OneNet_Subscribe(devSubTopic, 1);
 
   /* USER CODE END 2 */
 
@@ -136,34 +136,69 @@ int main(void)
 //      OLED_ShowString(24,0,"Init OK",12);
       HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_10);
 
-      Value_GY30();
-      OLED_ShowNum(0,0,Lumen,4,16);
+
 
 //      Motor_Backward();
 //      Motor_Forward();
 
-//      temperature = DS18B20_Get_Temperature();
-//      OLED_ShowNum(0,0,temperature/10,2,16);
+//光照阈值
+      if (Lumen > Lumen_Thresold){
+          Lumen_Flag = 1;
+      }else{
+          Lumen_Flag = 0;
+      };
+//TDS阈值
+      if (TDS > TDS_Thresold){
+          TDS_Flag = 1;
+      }else{
+          TDS_Flag = 0;
+      };
+//温度阈值
+      if (temperature > temperature_Thresold){
+          temperature_Flag = 1;
+      }else{
+          temperature_Flag = 0;
+      };
+//体重
+      if (Weight > Weight_Thresold){
+          Weight_Flag = 1;
+      }else{
+          Weight_Flag = 0;
+      };
 
-//      TDS_Check();
-//      OLED_ShowNum(0,2,TDS,2,16);
+//投喂
+      if (Eat_Flag){
+          Motor_Forward();
+      } else{
+          Weight_Flag = 0;
+      };
 
-//      Read_Weigh();
-//      OLED_ShowNum(0,2,(uint32_t)Read_Weigh(),8,16);
+      Value_GY30();
+      OLED_ShowNum(0,0,(uint32_t)Lumen,4,12);
 
+      temperature = DS18B20_Get_Temperature();
+      OLED_ShowNum(0,1,(uint32_t)temperature,4,12);
 
-      if(++timeCount >= 100){
-          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d}",
-                  temperature,TDS,Lumen);
-          OneNet_Publish(devPubTopic, PUB_BUF);
+      TDS_Check();
+      OLED_ShowNum(0,2,(uint32_t)TDS,4,12);
 
-          timeCount = 0;
-          ESP01S_Clear();
-      }
-      dataPtr = ESP01S_GetIPD(3);
-      if(dataPtr != NULL)
-          OneNet_RevPro(dataPtr);
-      HAL_Delay(100);
+      Read_Weigh();
+      OLED_ShowNum(0,3,(uint32_t)Weight,4,12);
+
+      HAL_Delay(10);
+
+//      if(++timeCount >= 100){
+//          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d}",
+//                  temperature,TDS,Lumen);
+//          OneNet_Publish(devPubTopic, PUB_BUF);
+//
+//          timeCount = 0;
+//          ESP01S_Clear();
+//      }
+//      dataPtr = ESP01S_GetIPD(3);
+//      if(dataPtr != NULL)
+//          OneNet_RevPro(dataPtr);
+
 
     /* USER CODE END WHILE */
 
