@@ -49,6 +49,8 @@ extern "C" {
 #include "DS18B20.h"
 #include "TDS.h"
 #include "HX711.h"
+#include "ULN.h"
+#include "GY-302.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -104,6 +106,10 @@ void Error_Handler(void);
 #define OLED_SCL_GPIO_Port GPIOB
 #define OLED_SDA_Pin GPIO_PIN_4
 #define OLED_SDA_GPIO_Port GPIOB
+#define BH1750_SCL_Pin GPIO_PIN_6
+#define BH1750_SCL_GPIO_Port GPIOB
+#define BH1750_SDA_Pin GPIO_PIN_7
+#define BH1750_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

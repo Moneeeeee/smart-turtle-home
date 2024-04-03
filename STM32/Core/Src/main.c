@@ -111,32 +111,36 @@ int main(void)
 //  RetargetInit(&huart1);
 
     OLED_Init();
-    DS18B20_Init_Check();
+//    DS18B20_Init_Check();
     OLED_Clear();
+    BH1750_Init();
 //    OLED_ShowNum(0,0,1,16,12);
 
 //    DWT_Delay_Init();
 
 //    DS18B20_Init();
+
+  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
+  ESP01S_Init();  //8266初始
+  while(OneNet_DevLink())  //接入onenet
+  ESP01S_Clear();    //*/
+  OneNet_Subscribe(devSubTopic, 1);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-    HAL_GPIO_WritePin(ULN_1_GPIO_Port,ULN_1_Pin,GPIO_PIN_SET);
-    HAL_GPIO_WritePin(ULN_2_GPIO_Port,ULN_2_Pin,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(ULN_3_GPIO_Port,ULN_3_Pin,GPIO_PIN_SET);
-    HAL_GPIO_WritePin(ULN_4_GPIO_Port,ULN_4_Pin,GPIO_PIN_SET);
   while (1)
   {
 //      OLED_ShowString(24,0,"Init OK",12);
       HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_10);
-      HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
 
-      HAL_GPIO_TogglePin(ULN_1_GPIO_Port,ULN_1_Pin);
-      HAL_GPIO_TogglePin(ULN_2_GPIO_Port,ULN_2_Pin);
-      HAL_GPIO_TogglePin(ULN_3_GPIO_Port,ULN_3_Pin);
-      HAL_GPIO_TogglePin(ULN_4_GPIO_Port,ULN_4_Pin);
+      Value_GY30();
+      OLED_ShowNum(0,0,Lumen,4,16);
+
+//      Motor_Backward();
+//      Motor_Forward();
 
 //      temperature = DS18B20_Get_Temperature();
 //      OLED_ShowNum(0,0,temperature/10,2,16);
@@ -148,7 +152,18 @@ int main(void)
 //      OLED_ShowNum(0,2,(uint32_t)Read_Weigh(),8,16);
 
 
-      HAL_Delay(1000);
+      if(++timeCount >= 100){
+          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d}",
+                  temperature,TDS,Lumen);
+          OneNet_Publish(devPubTopic, PUB_BUF);
+
+          timeCount = 0;
+          ESP01S_Clear();
+      }
+      dataPtr = ESP01S_GetIPD(3);
+      if(dataPtr != NULL)
+          OneNet_RevPro(dataPtr);
+      HAL_Delay(100);
 
     /* USER CODE END WHILE */
 
@@ -220,7 +235,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 //        if(aRxBuffer=='0')  HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
     }
 
-    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�?????????????????????????????????????????????????
+    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�?????????????????????????????????????????????????????
 }
 
 /* USER CODE END 4 */

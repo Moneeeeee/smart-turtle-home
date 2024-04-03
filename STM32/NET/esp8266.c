@@ -197,33 +197,41 @@ void    ESP01S_Init(void)
     ESP01S_Clear();
 
     printf("0. AT\r\n");
+    OLED_ShowNum(0,0,1,4,12);
     while(ESP01S_SendCmd("AT\r\n", "OK"));
         HAL_Delay(500);
 
     printf("1. RST\r\n");
+    OLED_ShowNum(0,0,2,4,12);
     ESP01S_SendCmd("AT+RST\r\n", "");
     HAL_Delay(500);
 
     ESP01S_SendCmd("AT+CIPCLOSE\r\n", "");              //�ر�TCP����
+    OLED_ShowNum(0,0,3,4,12);
     HAL_Delay(500);
 
     printf("2. CWMODE\r\n");
+    OLED_ShowNum(0,0,4,4,12);
     while(ESP01S_SendCmd("AT+CWMODE=1\r\n", "OK"))     //ģʽ1(Station),Ĭ�ϱ���Flash
         HAL_Delay(500);
 
     printf("3. AT+CWDHCP\r\n");       //����DHCP(��ȡ����IP),Ĭ�ϱ���Flash
+    OLED_ShowNum(0,0,5,4,12);
     while(ESP01S_SendCmd("AT+CWDHCP=1,1\r\n", "OK"))
         HAL_Delay(500);
 
     printf("4. CWJAP\r\n");           //����WIFI
+    OLED_ShowNum(0,0,6,4,12);
     while(ESP01S_SendCmd(ESP01S_WIFI_INFO, "GOT IP"))
         HAL_Delay(500);
 
     printf("5. CIPSTART\r\n");        //����TCP����
+    OLED_ShowNum(0,0,7,4,12);
     while(ESP01S_SendCmd(ESP01S_ONENET_INFO, "CONNECT"))
         HAL_Delay(500);
 
     printf("6. ESP01S Init OK\r\n");
+    OLED_ShowNum(0,0,8,4,12);
 
 }
 

@@ -54,21 +54,21 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, DS18B20_Pin|ESP_EN_Pin|ULN_1_Pin|ULN_3_Pin
-                          |UVB_Pin|LED_1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, DS18B20_Pin|ULN_1_Pin|ULN_3_Pin|UVB_Pin
+                          |LED_1_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, ESP_EN_Pin|UVA_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, HX117_SCL_Pin|GPIO_PIN_10|GPIO_PIN_11|ULN_2_Pin
-                          |ULN_4_Pin|OLED_SCL_Pin|OLED_SDA_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(UVA_GPIO_Port, UVA_Pin, GPIO_PIN_SET);
+                          |ULN_4_Pin|OLED_SCL_Pin|OLED_SDA_Pin|BH1750_SCL_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PC13 */
   GPIO_InitStruct.Pin = GPIO_PIN_13;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin
@@ -100,9 +100,9 @@ void MX_GPIO_Init(void)
   HAL_GPIO_Init(HX711_SDA_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PB10 PB11 PBPin PBPin
-                           PBPin PBPin */
+                           PBPin PBPin PBPin */
   GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_11|ULN_2_Pin|ULN_4_Pin
-                          |OLED_SCL_Pin|OLED_SDA_Pin;
+                          |OLED_SCL_Pin|OLED_SDA_Pin|BH1750_SCL_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -114,6 +114,12 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PtPin */
+  GPIO_InitStruct.Pin = BH1750_SDA_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(BH1750_SDA_GPIO_Port, &GPIO_InitStruct);
 
 }
 

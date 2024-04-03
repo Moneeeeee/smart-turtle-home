@@ -32,9 +32,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/DS18B20.c" "CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj.d"
+  "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/GY-302.c" "CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/HX711.c" "CMakeFiles/STM32.elf.dir/Core/Src/HX711.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/HX711.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/OLED.c" "CMakeFiles/STM32.elf.dir/Core/Src/OLED.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/OLED.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/TDS.c" "CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.obj.d"
+  "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/ULN.c" "CMakeFiles/STM32.elf.dir/Core/Src/ULN.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/ULN.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/adc.c" "CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/adc.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/cJSON.c" "CMakeFiles/STM32.elf.dir/Core/Src/cJSON.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/cJSON.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/gpio.c" "CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj.d"

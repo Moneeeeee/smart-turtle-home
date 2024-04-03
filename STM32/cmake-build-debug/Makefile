@@ -152,6 +152,30 @@ Core/Src/DS18B20.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.s
 .PHONY : Core/Src/DS18B20.c.s
 
+Core/Src/GY-302.obj: Core/Src/GY-302.c.obj
+.PHONY : Core/Src/GY-302.obj
+
+# target to build an object file
+Core/Src/GY-302.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.obj
+.PHONY : Core/Src/GY-302.c.obj
+
+Core/Src/GY-302.i: Core/Src/GY-302.c.i
+.PHONY : Core/Src/GY-302.i
+
+# target to preprocess a source file
+Core/Src/GY-302.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.i
+.PHONY : Core/Src/GY-302.c.i
+
+Core/Src/GY-302.s: Core/Src/GY-302.c.s
+.PHONY : Core/Src/GY-302.s
+
+# target to generate assembly for a file
+Core/Src/GY-302.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.s
+.PHONY : Core/Src/GY-302.c.s
+
 Core/Src/HX711.obj: Core/Src/HX711.c.obj
 .PHONY : Core/Src/HX711.obj
 
@@ -223,6 +247,30 @@ Core/Src/TDS.s: Core/Src/TDS.c.s
 Core/Src/TDS.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/TDS.c.s
 .PHONY : Core/Src/TDS.c.s
+
+Core/Src/ULN.obj: Core/Src/ULN.c.obj
+.PHONY : Core/Src/ULN.obj
+
+# target to build an object file
+Core/Src/ULN.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/ULN.c.obj
+.PHONY : Core/Src/ULN.c.obj
+
+Core/Src/ULN.i: Core/Src/ULN.c.i
+.PHONY : Core/Src/ULN.i
+
+# target to preprocess a source file
+Core/Src/ULN.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/ULN.c.i
+.PHONY : Core/Src/ULN.c.i
+
+Core/Src/ULN.s: Core/Src/ULN.c.s
+.PHONY : Core/Src/ULN.s
+
+# target to generate assembly for a file
+Core/Src/ULN.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/ULN.c.s
+.PHONY : Core/Src/ULN.c.s
 
 Core/Src/adc.obj: Core/Src/adc.c.obj
 .PHONY : Core/Src/adc.obj
@@ -988,6 +1036,9 @@ help:
 	@echo ... Core/Src/DS18B20.obj
 	@echo ... Core/Src/DS18B20.i
 	@echo ... Core/Src/DS18B20.s
+	@echo ... Core/Src/GY-302.obj
+	@echo ... Core/Src/GY-302.i
+	@echo ... Core/Src/GY-302.s
 	@echo ... Core/Src/HX711.obj
 	@echo ... Core/Src/HX711.i
 	@echo ... Core/Src/HX711.s
@@ -997,6 +1048,9 @@ help:
 	@echo ... Core/Src/TDS.obj
 	@echo ... Core/Src/TDS.i
 	@echo ... Core/Src/TDS.s
+	@echo ... Core/Src/ULN.obj
+	@echo ... Core/Src/ULN.i
+	@echo ... Core/Src/ULN.s
 	@echo ... Core/Src/adc.obj
 	@echo ... Core/Src/adc.i
 	@echo ... Core/Src/adc.s
