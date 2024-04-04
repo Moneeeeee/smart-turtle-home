@@ -146,6 +146,7 @@ int main(void)
                   temperature,TDS,Lumen,Weight);
           OneNet_Publish(devPubTopic, PUB_BUF);
 
+
           timeCount = 0;
           ESP01S_Clear();
       }
