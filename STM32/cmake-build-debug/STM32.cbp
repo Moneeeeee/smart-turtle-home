@@ -98,6 +98,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/BUZZER.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/Control.h">
+			<Option target="STM32.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/DS18B20.h">
 			<Option target="STM32.elf"/>
 		</Unit>
@@ -144,6 +150,12 @@
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/usart.h">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/BUZZER.c">
+			<Option target="STM32.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/Control.c">
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/DS18B20.c">

@@ -1,5 +1,6 @@
-CMakeFiles/STM32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: \
- C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Src\stm32f1xx_hal_msp.c \
+CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj: \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Src\BUZZER.c \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/BUZZER.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/main.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/stm32f1xx_hal_conf.h \
@@ -36,7 +37,6 @@ CMakeFiles/STM32.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_tim_ex.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_uart.h \
- C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/main.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/usart.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/gpio.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/tim.h \

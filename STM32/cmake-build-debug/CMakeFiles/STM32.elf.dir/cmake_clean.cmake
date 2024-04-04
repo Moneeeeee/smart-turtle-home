@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj"
+  "CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj.d"
+  "CMakeFiles/STM32.elf.dir/Core/Src/Control.c.obj"
+  "CMakeFiles/STM32.elf.dir/Core/Src/Control.c.obj.d"
   "CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj"
   "CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj.d"
   "CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.obj"

@@ -86,4 +86,6 @@ CMakeFiles/STM32.elf.dir/Core/Src/gpio.c.obj: \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/TDS.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/HX711.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/ULN.h \
- C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/GY-302.h
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/GY-302.h \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/Control.h \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/BUZZER.h

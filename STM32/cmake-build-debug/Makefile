@@ -128,6 +128,54 @@ STM32.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/build
 .PHONY : STM32.elf/fast
 
+Core/Src/BUZZER.obj: Core/Src/BUZZER.c.obj
+.PHONY : Core/Src/BUZZER.obj
+
+# target to build an object file
+Core/Src/BUZZER.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj
+.PHONY : Core/Src/BUZZER.c.obj
+
+Core/Src/BUZZER.i: Core/Src/BUZZER.c.i
+.PHONY : Core/Src/BUZZER.i
+
+# target to preprocess a source file
+Core/Src/BUZZER.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.i
+.PHONY : Core/Src/BUZZER.c.i
+
+Core/Src/BUZZER.s: Core/Src/BUZZER.c.s
+.PHONY : Core/Src/BUZZER.s
+
+# target to generate assembly for a file
+Core/Src/BUZZER.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.s
+.PHONY : Core/Src/BUZZER.c.s
+
+Core/Src/Control.obj: Core/Src/Control.c.obj
+.PHONY : Core/Src/Control.obj
+
+# target to build an object file
+Core/Src/Control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/Control.c.obj
+.PHONY : Core/Src/Control.c.obj
+
+Core/Src/Control.i: Core/Src/Control.c.i
+.PHONY : Core/Src/Control.i
+
+# target to preprocess a source file
+Core/Src/Control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/Control.c.i
+.PHONY : Core/Src/Control.c.i
+
+Core/Src/Control.s: Core/Src/Control.c.s
+.PHONY : Core/Src/Control.s
+
+# target to generate assembly for a file
+Core/Src/Control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/Control.c.s
+.PHONY : Core/Src/Control.c.s
+
 Core/Src/DS18B20.obj: Core/Src/DS18B20.c.obj
 .PHONY : Core/Src/DS18B20.obj
 
@@ -1033,6 +1081,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... STM32.elf
+	@echo ... Core/Src/BUZZER.obj
+	@echo ... Core/Src/BUZZER.i
+	@echo ... Core/Src/BUZZER.s
+	@echo ... Core/Src/Control.obj
+	@echo ... Core/Src/Control.i
+	@echo ... Core/Src/Control.s
 	@echo ... Core/Src/DS18B20.obj
 	@echo ... Core/Src/DS18B20.i
 	@echo ... Core/Src/DS18B20.s

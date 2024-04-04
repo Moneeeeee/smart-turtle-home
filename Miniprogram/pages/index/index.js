@@ -25,7 +25,7 @@ Page({
     Weight:0,
     UVB:false,
     UVA:false,
-    Steer:false,
+    Pump:false,
     WATER:false,
     tem_threshold:0,
     TDS_threshold:0,
@@ -64,11 +64,11 @@ Page({
   },
 
 
-  onSTEERClick(event){
+  onEatClick(event){
     const that = this;
     // 只发送信号，不需要更改Steer的值
     that.data.client.publish(mpPubTopic, JSON.stringify({
-      target: "Steer",
+      target: "Eat",
       value: 1 // 或者您可以选择发送一个特定的信号，代表“单次操作”
     }), function (err) {
       if (!err) {
@@ -86,14 +86,14 @@ Page({
     });
   },
 
-  onWATERChange(event){
+  onPumpChange(event){
     const that  = this;
     const sw = event.detail.value;
-    that.setData({ WATER: sw });
+    that.setData({ Pump: sw });
     // console.log(event.detail,value);
     // that.setData({LED:sw})
       that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "WATER",
+        target: "Pump",
         value: sw ? 1 : 0
       }), function (err) {
         if (!err) {

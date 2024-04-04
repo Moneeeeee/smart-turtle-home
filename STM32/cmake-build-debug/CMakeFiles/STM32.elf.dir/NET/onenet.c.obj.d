@@ -87,6 +87,8 @@ CMakeFiles/STM32.elf.dir/NET/onenet.c.obj: \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/HX711.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/ULN.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/GY-302.h \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/Control.h \
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/BUZZER.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\NET\esp8266.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/cJSON.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\NET\onenet.h \
