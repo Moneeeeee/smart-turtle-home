@@ -128,30 +128,6 @@ STM32.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/build
 .PHONY : STM32.elf/fast
 
-Core/Src/BUZZER.obj: Core/Src/BUZZER.c.obj
-.PHONY : Core/Src/BUZZER.obj
-
-# target to build an object file
-Core/Src/BUZZER.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj
-.PHONY : Core/Src/BUZZER.c.obj
-
-Core/Src/BUZZER.i: Core/Src/BUZZER.c.i
-.PHONY : Core/Src/BUZZER.i
-
-# target to preprocess a source file
-Core/Src/BUZZER.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.i
-.PHONY : Core/Src/BUZZER.c.i
-
-Core/Src/BUZZER.s: Core/Src/BUZZER.c.s
-.PHONY : Core/Src/BUZZER.s
-
-# target to generate assembly for a file
-Core/Src/BUZZER.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.s
-.PHONY : Core/Src/BUZZER.c.s
-
 Core/Src/Control.obj: Core/Src/Control.c.obj
 .PHONY : Core/Src/Control.obj
 
@@ -608,13 +584,13 @@ Core/Src/usart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Src/usart.c.s
 .PHONY : Core/Src/usart.c.s
 
-Core/Startup/startup_stm32f103c8tx.obj: Core/Startup/startup_stm32f103c8tx.s.obj
-.PHONY : Core/Startup/startup_stm32f103c8tx.obj
+Core/Startup/startup_stm32f103cbtx.obj: Core/Startup/startup_stm32f103cbtx.s.obj
+.PHONY : Core/Startup/startup_stm32f103cbtx.obj
 
 # target to build an object file
-Core/Startup/startup_stm32f103c8tx.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj
-.PHONY : Core/Startup/startup_stm32f103c8tx.s.obj
+Core/Startup/startup_stm32f103cbtx.s.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32.elf.dir\build.make CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj
+.PHONY : Core/Startup/startup_stm32f103cbtx.s.obj
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
@@ -1081,9 +1057,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... STM32.elf
-	@echo ... Core/Src/BUZZER.obj
-	@echo ... Core/Src/BUZZER.i
-	@echo ... Core/Src/BUZZER.s
 	@echo ... Core/Src/Control.obj
 	@echo ... Core/Src/Control.i
 	@echo ... Core/Src/Control.s
@@ -1141,7 +1114,7 @@ help:
 	@echo ... Core/Src/usart.obj
 	@echo ... Core/Src/usart.i
 	@echo ... Core/Src/usart.s
-	@echo ... Core/Startup/startup_stm32f103c8tx.obj
+	@echo ... Core/Startup/startup_stm32f103cbtx.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s

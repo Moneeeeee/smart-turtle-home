@@ -98,9 +98,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/BUZZER.h">
-			<Option target="STM32.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/Control.h">
 			<Option target="STM32.elf"/>
 		</Unit>
@@ -150,9 +147,6 @@
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Inc/usart.h">
-			<Option target="STM32.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/BUZZER.c">
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/Control.c">
@@ -212,7 +206,7 @@
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/usart.c">
 			<Option target="STM32.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Startup/startup_stm32f103c8tx.s">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Startup/startup_stm32f103cbtx.s">
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
@@ -461,7 +455,7 @@
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/NET/onenet.h">
 			<Option target="STM32.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/STM32F103C8TX_FLASH.ld">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/STM32F103CBTX_FLASH.ld">
 			<Option target="STM32.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/CMakeLists.txt">

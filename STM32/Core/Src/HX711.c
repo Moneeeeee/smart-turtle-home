@@ -11,7 +11,6 @@
 #define HX711_SCK_GPIO_PIN    GPIO_PIN_1
 
 uint32_t Weight = 0;
-uint32_t preWeight = 0;
 // 读取DOUT引脚的宏定义
 #define HX711_DOUT_READ()  HAL_GPIO_ReadPin(HX711_DOUT_GPIO_PORT, HX711_DOUT_GPIO_PIN)
 
@@ -85,9 +84,7 @@ uint32_t Read_Weigh(void)
 //    GPIO_ResetBits(GPIOB, SCL_PIN);
     HAL_GPIO_WritePin(HX711_SCK_GPIO_PORT, HX711_SCK_GPIO_PIN,GPIO_PIN_RESET);
     HAL_Delay_us(1);
-
     Weight = abs((900000-(value-8000000))/1000-30);
-
     return Weight;
 }
 

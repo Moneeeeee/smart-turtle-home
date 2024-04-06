@@ -185,6 +185,7 @@
 			},
 			"sourceIndexes" : 
 			[
+				17,
 				18,
 				19,
 				20,
@@ -203,8 +204,8 @@
 				33,
 				34,
 				35,
-				36,
-				37,
+				95,
+				96,
 				97,
 				98,
 				99,
@@ -219,11 +220,9 @@
 				108,
 				109,
 				110,
-				111,
 				112,
-				114,
-				117,
-				119
+				115,
+				117
 			]
 		},
 		{
@@ -322,7 +321,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				38
+				36
 			]
 		}
 	],
@@ -366,7 +365,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/STM32F103C8TX_FLASH.ld",
+				"fragment" : "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/STM32F103CBTX_FLASH.ld",
 				"role" : "flags"
 			}
 		],
@@ -402,10 +401,11 @@
 				14,
 				15,
 				16,
-				17,
+				37,
+				38,
 				39,
-				40,
 				41,
+				42,
 				43,
 				44,
 				45,
@@ -425,8 +425,8 @@
 				59,
 				60,
 				61,
-				62,
 				63,
+				64,
 				65,
 				66,
 				67,
@@ -456,18 +456,17 @@
 				91,
 				92,
 				93,
-				94,
-				95,
+				111,
 				113,
-				115,
-				118,
-				120
+				116,
+				118
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
+				17,
 				18,
 				19,
 				20,
@@ -486,8 +485,8 @@
 				33,
 				34,
 				35,
-				36,
-				37,
+				95,
+				96,
 				97,
 				98,
 				99,
@@ -502,33 +501,26 @@
 				108,
 				109,
 				110,
-				111,
 				112,
-				114,
-				117,
-				119
+				115,
+				117
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				38,
-				42,
-				64,
-				96,
-				116,
-				121
+				36,
+				40,
+				62,
+				94,
+				114,
+				119
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"path" : "Core/Inc/BUZZER.h",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"path" : "Core/Inc/Control.h",
@@ -613,12 +605,6 @@
 			"backtrace" : 1,
 			"path" : "Core/Inc/usart.h",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/BUZZER.c",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
@@ -737,7 +723,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "Core/Startup/startup_stm32f103c8tx.s",
+			"path" : "Core/Startup/startup_stm32f103cbtx.s",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -1171,7 +1157,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "STM32F103C8TX_FLASH.ld",
+			"path" : "STM32F103CBTX_FLASH.ld",
 			"sourceGroupIndex" : 2
 		}
 	],

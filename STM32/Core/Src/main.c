@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "retarget.h"
+//#include "retarget.h"
 #include "esp8266.h"
 #include "onenet.h"
 #include "MqttKit.h"
@@ -107,24 +107,20 @@ int main(void)
   MX_USART2_UART_Init();
   MX_ADC1_Init();
   MX_TIM1_Init();
-  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 //  RetargetInit(&huart1);
-    HAL_TIM_Base_Start_IT(&htim2);
+
     OLED_Init();
+//    DS18B20_Init_Check();
     OLED_Clear();
-    //    DS18B20_Init_Check();
     BH1750_Init();
-    BEEP_Init();
+//    DS18B20_Init();
 
-
-
-
-  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
-  ESP01S_Init();  //8266初始
-  while(OneNet_DevLink())  //接入onenet
-  ESP01S_Clear();    //*/
-  OneNet_Subscribe(devSubTopic, 1);
+//  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
+//  ESP01S_Init();  //8266初始
+//  while(OneNet_DevLink())  //接入onenet
+//  ESP01S_Clear();    //*/
+//  OneNet_Subscribe(devSubTopic, 1);
 
   /* USER CODE END 2 */
 
@@ -133,19 +129,21 @@ int main(void)
 
   while (1)
   {
-      HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_10);
 
-      OLED_Show();
-      Data_Get();
-      Flag_Check();
+//      HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_10);
+        //OLED显示集成函数
+        OLED_Data_Show();
+        //数据采集函数（水温、水质、光照强度等）
+        Data_Get();
+        //轮询设置标志位
+        Flag_Set();
 
+        HAL_Delay(10);
 
-      HAL_Delay(10);
       if(++timeCount >= 100){
-          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d,\"Weight\":%d}",
-                  temperature,TDS,Lumen,Weight);
+          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d,\"Weight_Flag\":%d}",
+                  temperature,TDS,Lumen,Weight_Flag);
           OneNet_Publish(devPubTopic, PUB_BUF);
-
 
           timeCount = 0;
           ESP01S_Clear();
@@ -223,7 +221,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         ESP01S_buf[ESP01S_cnt++] = aRxBuffer;   //接收数据转存
     }
 
-    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�??????????????????????????????????????????????????????????
+    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�?????????????????????????????????????????????????????
 }
 
 /* USER CODE END 4 */

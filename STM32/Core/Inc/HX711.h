@@ -14,7 +14,7 @@ extern uint32_t Weight_Maopi;
 extern uint32_t Weight_Shiwu;
 extern uint8_t Flag_Error;
 extern uint32_t Weight ;
-extern uint32_t preWeight ;
+
 void ReadWeigh_Init(void);
 uint32_t Read_Weigh(void);
 uint32_t Read_Average(void);

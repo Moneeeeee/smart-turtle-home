@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Startup/startup_stm32f103c8tx.s" "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/cmake-build-debug/CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
+  "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Startup/startup_stm32f103cbtx.s" "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/cmake-build-debug/CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -31,7 +31,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/BUZZER.c" "CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/Control.c" "CMakeFiles/STM32.elf.dir/Core/Src/Control.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/Control.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/DS18B20.c" "CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj.d"
   "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Turtles_Home/STM32/Core/Src/GY-302.c" "CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.obj" "gcc" "CMakeFiles/STM32.elf.dir/Core/Src/GY-302.c.obj.d"

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj"
-  "CMakeFiles/STM32.elf.dir/Core/Src/BUZZER.c.obj.d"
   "CMakeFiles/STM32.elf.dir/Core/Src/Control.c.obj"
   "CMakeFiles/STM32.elf.dir/Core/Src/Control.c.obj.d"
   "CMakeFiles/STM32.elf.dir/Core/Src/DS18B20.c.obj"
@@ -39,7 +37,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/STM32.elf.dir/Core/Src/tim.c.obj.d"
   "CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj"
   "CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj.d"
-  "CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
+  "CMakeFiles/STM32.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj"
   "CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
   "CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d"
   "CMakeFiles/STM32.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"

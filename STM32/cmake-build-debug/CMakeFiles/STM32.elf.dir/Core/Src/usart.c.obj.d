@@ -41,20 +41,18 @@ CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj: \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/gpio.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/tim.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/adc.h \
- C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/retarget.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stat.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdio.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\newlib.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\config.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\ieeefp.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\time.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\cdefs.h \
+ c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\reent.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\lock.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\time.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\endian.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_endian.h \
@@ -66,9 +64,6 @@ CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_pthreadtypes.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\sched.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\types.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_locale.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdio.h \
- c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stdio.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\NET/esp8266.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\NET/onenet.h \
@@ -79,6 +74,7 @@ CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\alloca.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/OLED.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\string.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_locale.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\strings.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\math.h \
@@ -87,5 +83,4 @@ CMakeFiles/STM32.elf.dir/Core/Src/usart.c.obj: \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/HX711.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/ULN.h \
  C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/GY-302.h \
- C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/Control.h \
- C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/BUZZER.h
+ C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Turtles_Home\STM32\Core\Inc/Control.h

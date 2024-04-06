@@ -384,6 +384,7 @@ short DS18B20_Get_Temperature(){
     temperature <<= 8;
     temperature += TL;
     temperature = (float)temperature*0.625;
+    temperature = (uint32_t)temperature;
     if(temp)
         return temperature;
     else

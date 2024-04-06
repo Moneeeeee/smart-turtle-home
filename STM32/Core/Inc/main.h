@@ -36,10 +36,11 @@ extern "C" {
 #include "gpio.h"
 #include "tim.h"
 #include "adc.h"
+#include "stdio.h"
 //#include "core_cm4.h" // 根据你的MCU核心调整，例如STM32F4系列是CM4
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "retarget.h"
+//#include "retarget.h"
 #include "esp8266.h"
 #include "onenet.h"
 #include "MqttKit.h"
@@ -52,7 +53,6 @@ extern "C" {
 #include "ULN.h"
 #include "GY-302.h"
 #include "Control.h"
-#include "BUZZER.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -82,20 +82,14 @@ void Error_Handler(void);
 #define DS18B20_GPIO_Port GPIOA
 #define TDS_Pin GPIO_PIN_1
 #define TDS_GPIO_Port GPIOA
-#define ESP_TX_Pin GPIO_PIN_2
-#define ESP_TX_GPIO_Port GPIOA
-#define ESP_RX_Pin GPIO_PIN_3
-#define ESP_RX_GPIO_Port GPIOA
 #define ESP_EN_Pin GPIO_PIN_5
 #define ESP_EN_GPIO_Port GPIOA
+#define BUZZER_Pin GPIO_PIN_0
+#define BUZZER_GPIO_Port GPIOB
 #define HX117_SCL_Pin GPIO_PIN_1
 #define HX117_SCL_GPIO_Port GPIOB
 #define HX711_SDA_Pin GPIO_PIN_2
 #define HX711_SDA_GPIO_Port GPIOB
-#define Pump_Lv_Pin GPIO_PIN_10
-#define Pump_Lv_GPIO_Port GPIOB
-#define Pump_Change_Pin GPIO_PIN_11
-#define Pump_Change_GPIO_Port GPIOB
 #define ULN_2_Pin GPIO_PIN_13
 #define ULN_2_GPIO_Port GPIOB
 #define ULN_4_Pin GPIO_PIN_14
