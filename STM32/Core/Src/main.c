@@ -116,11 +116,11 @@ int main(void)
     BH1750_Init();
 //    DS18B20_Init();
 
-//  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
-//  ESP01S_Init();  //8266初始
-//  while(OneNet_DevLink())  //接入onenet
-//  ESP01S_Clear();    //*/
-//  OneNet_Subscribe(devSubTopic, 1);
+  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
+  ESP01S_Init();  //8266初始
+  while(OneNet_DevLink())  //接入onenet
+  ESP01S_Clear();    //*/
+  OneNet_Subscribe(devSubTopic, 1);
 
   /* USER CODE END 2 */
 
@@ -140,9 +140,9 @@ int main(void)
 
         HAL_Delay(10);
 
-      if(++timeCount >= 100){
-          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d,\"Weight_Flag\":%d}",
-                  temperature,TDS,Lumen,Weight_Flag);
+      if(++timeCount >= 10){
+          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d,\"Weight_Flag\":%d,\"Weight\":%d}",
+                  (uint32_t )temperature,(uint32_t)TDS,(uint32_t )Lumen,Weight_Flag,(uint32_t )Weight);
           OneNet_Publish(devPubTopic, PUB_BUF);
 
           timeCount = 0;

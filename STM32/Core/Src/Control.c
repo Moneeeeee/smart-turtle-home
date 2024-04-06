@@ -61,6 +61,7 @@ void Data_Get(void){
     Read_Weigh();
     TDS_Check();
     Value_GY30();
+    temperature = 25;
 //    DS18B20_Get_Temperature();
 }
 

@@ -29,12 +29,8 @@
 
 
   <!-- 逃离警告部分 -->
-  <view wx:if="{{  1}}" class="escape-warning">
+  <view wx:if="{{ Weight_Flag == 1}}" class="escape-warning">
     逃离警告
-  </view>
-
-  <view wx:if="{{ 1}}" class="safe-notice">
-    安全状态
   </view>
 
 <!-- 数据部分 -->
