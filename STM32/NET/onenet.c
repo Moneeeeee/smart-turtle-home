@@ -227,37 +227,42 @@ void OneNet_RevPro(unsigned char *cmd)
 
                     if (json_target != NULL && json_value != NULL) {
 
-                        if (strcmp(json_target->valuestring, "Steer") == 0) {
+                        if (strcmp(json_target->valuestring, "Eat") == 0) {
                             if (json_value->valueint == 1) {
-
-                            } else if (json_value->valueint == 0) {
-
+                                for (int i = 0; i < 500; ++i) {
+                                    Motor_Forward();
+                                    HAL_Delay(1);
+                                }
+                                for (int i = 0; i < 500; ++i) {
+                                    Motor_Forward();
+                                    HAL_Delay(1);
+                                }
                             }
-                        } else if (strcmp(json_target->valuestring, "LED") == 0) {
-                            // ���� LED
+                        } else if (strcmp(json_target->valuestring, "UVA") == 0) {
                             if (json_value->valueint == 1) {
-                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,GPIO_PIN_RESET);//第一个LED
-                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);//第二个LED
-                                HAL_GPIO_WritePin(GPIOB,GPIO_PIN_11,GPIO_PIN_RESET);//第三个LED
-
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,GPIO_PIN_RESET);//第一个LED
                             }else if (json_value->valueint == 0) {
-                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,GPIO_PIN_SET);//第一个LED
-                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_SET);//第二个LED
-                                HAL_GPIO_WritePin(GPIOB,GPIO_PIN_11,GPIO_PIN_SET);//第三个LED
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,GPIO_PIN_SET);//第一个LED
                             }
-                        } else if (strcmp(json_target->valuestring, "WATER") == 0) {
+                        } else if (strcmp(json_target->valuestring, "UVB") == 0) {
+                            if (json_value->valueint == 1) {
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,GPIO_PIN_RESET);//第一个LED
+                            }else if (json_value->valueint == 0) {
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,GPIO_PIN_SET);//第一个LED
+                            }
+                        }else if (strcmp(json_target->valuestring, "WATER") == 0) {
 
                             if (json_value->valueint == 1) {
-
+//                                Pump(1);
                             } else if (json_value->valueint == 0) {
-
+//                                Pump(0);
                             }
                         }else if (strcmp(json_target->valuestring, "temperature_Thresold") == 0) {
                             temperature_Thresold = json_value->valueint;
                         }else if (strcmp(json_target->valuestring, "TDS_Thresold") == 0) {
-                            TDS_Thresold = (int)json_value->valuedouble;
-                        }else if (strcmp(json_target->valuestring, "MQ4_threshold") == 0) {
-                            Lumen_Thresold = (int) json_value->valuedouble;
+                            TDS_Thresold = json_value->valueint;
+                        }else if (strcmp(json_target->valuestring, "Lumen_Thresold") == 0) {
+                            Lumen_Thresold = json_value->valueint;
                         }
                     }
                     cJSON_Delete(json);

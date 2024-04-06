@@ -117,7 +117,7 @@
     </view>
     <view class="data-card_value">
       <!-- 添加一个按钮用于触发换水动作 -->
-      <button bindtap="onSTEERClick" class="data-card_button">投喂</button>
+      <button bindtap="onEATClick" class="data-card_button">投喂</button>
     </view>
   </view>
 </view>
@@ -130,7 +130,7 @@
     </view>
     <view class="data-card_value">
       <!-- 添加一个按钮用于触发换水动作 -->
-      <button bindtap="onSTEERClick" class="data-card_button">换水</button>
+      <button bindtap="onWATERClick" class="data-card_button">换水</button>
     </view>
   </view>
 </view>
@@ -142,7 +142,7 @@
             水温阈值
         </view>
         <view class="data-card_value">
-            <slider value="{{tem_threshold}}" bindchange="onTEMThresholdChange" min="0" max="100" step="1" />
+            <slider value="{{temperature_Thresold}}" bindchange="onTEMThresholdChange" min="0" max="100" step="1" />
         </view>
     </view>
  <!--天然气 滑块 -->
@@ -151,7 +151,7 @@
           水质阈值
         </view>
         <view class="data-card_value">
-            <slider value="{{TDS_threshold}}" bindchange="onTDSThresholdChange" min="0" max="100" step="1" />
+            <slider value="{{TDS_Thresold}}" bindchange="onTDSThresholdChange" min="0" max="100" step="1" />
         </view>
     </view>
  <!--烟雾 滑块 -->
@@ -160,7 +160,7 @@
          光照阈值
         </view>
         <view class="data-card_value">
-            <slider value="{{Lumen_threshold}}" bindchange="onMQ2ThresholdChange" min="0" max="100" step="1" />
+            <slider value="{{Lumen_Thresold}}" bindchange="onLumenThresholdChange" min="0" max="100" step="1" />
         </view>
     </view>
 

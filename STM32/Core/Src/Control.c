@@ -4,16 +4,16 @@
 #include "Control.h"
 
 uint8_t Lumen_Flag = 0;
-uint32_t Lumen_Thresold = 0;
+uint32_t Lumen_Thresold = 30;
 
 uint8_t TDS_Flag = 0;
-uint32_t TDS_Thresold = 0;
+uint32_t TDS_Thresold = 30;
 
 uint8_t temperature_Flag = 0;
-uint32_t temperature_Thresold = 0;
+uint32_t temperature_Thresold = 16;
 
 uint8_t Weight_Flag = 0;
-uint32_t Weight_Thresold = 0;
+uint32_t Weight_Thresold = 300;
 
 uint8_t Eat_Flag = 0;
 
@@ -95,4 +95,13 @@ void OLED_Data_Show(void){
     OLED_ShowString(0, 4, "Pum:", 12);
     OLED_ShowString(30, 4, Pump_Flag == 1 ? "ON" : "OFF", 12);
 
+}
+
+
+void Pump(uint8_t state){
+    if(state){
+        HAL_GPIO_WritePin(GPIOB,GPIO_PIN_10,GPIO_PIN_SET);
+    }else{
+        HAL_GPIO_WritePin(GPIOB,GPIO_PIN_10,GPIO_PIN_RESET);
+    }
 }

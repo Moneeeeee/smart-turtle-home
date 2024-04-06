@@ -27,6 +27,7 @@ Page({
     UVA:false,
     Pump:false,
     WATER:false,
+    Eat:0,
     tem_threshold:0,
     TDS_threshold:0,
     Lumen_threshold:0,
@@ -64,7 +65,7 @@ Page({
   },
 
 
-  onEatClick(event){
+  onEATClick(event){
     const that = this;
     // 只发送信号，不需要更改Steer的值
     that.data.client.publish(mpPubTopic, JSON.stringify({
@@ -104,17 +105,17 @@ Page({
 
   onTEMThresholdChange(event) {
     const that = this;
-    const tem_threshold_read = event.detail.value;
+    const temperature_Thresold = event.detail.value;
     // 将 number 类型的数据转换为 uint8 类型
-    const tem_threshold_uint8 = Math.round(tem_threshold_read); // 使用 Math.round() 进行四舍五入取整
-    that.setData({ tem_threshold: tem_threshold_read });
+    // const tem_threshold_uint8 = Math.round(tem_threshold_read); // 使用 Math.round() 进行四舍五入取整
+    that.setData({ temperature_Thresold: temperature_Thresold });
     // 发送 uint8 类型的数据到 STM32 端
     that.data.client.publish(mpPubTopic, JSON.stringify({
-      target: "tem_threshold",
-      value: tem_threshold_uint8 // 发送 uint8 类型的数据
+      target: "temperature_Thresold",
+      value: temperature_Thresold // 发送 uint8 类型的数据
     }), function (err) {
       if (!err) {
-        console.log('成功下发温度阈值:', tem_threshold_uint8);
+        console.log('成功下发温度阈值:', temperature_Thresold);
       }
     });
   },
@@ -122,31 +123,31 @@ Page({
 
   onTDSThresholdChange(event) {
     const that = this;
-    const TDS_threshold_read = event.detail.value;
-    that.setData({ TDS_threshold: TDS_threshold_read });
+    const TDS_Thresold = event.detail.value;
+    that.setData({ TDS_Thresold: TDS_Thresold });
     // console.log(event.detail,value);
     // that.setData({LED:sw})
       that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "TDS_threshold",
-        value: TDS_threshold_read
+        target: "TDS_Thresold",
+        value: TDS_Thresold
       }), function (err) {
         if (!err) {
-          console.log('成功下发TDS阈值:', TDS_threshold_read);
+          console.log('成功下发TDS阈值:', TDS_Thresold);
         }
     });
   },
   onLumenThresholdChange(event) {
     const that = this;
-    const Lumen_threshold_read = event.detail.value;
-    that.setData({ Lumen_threshold: Lumen_threshold_read });
+    const Lumen_Thresold = event.detail.value;
+    that.setData({ Lumen_Thresold: Lumen_Thresold });
     // console.log(event.detail,value);
     // that.setData({LED:sw})
       that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "Lumen_threshold",
-        value: Lumen_threshold_read
+        target: "Lumen_Thresold",
+        value: Lumen_Thresold
       }), function (err) {
         if (!err) {
-          console.log('成功下发光照阈值:', Lumen_threshold_read);
+          console.log('成功下发光照阈值:', Lumen_Thresold);
         }
     });
   },
@@ -190,9 +191,11 @@ Page({
           TDS:dataFromDev.TDS,
           Lumen:dataFromDev.Lumen,
           Weight:dataFromDev.Weight,
-          Steer:dataFromDev.Steer,
-          Relay:dataFromDev.Relay,
-          LED:dataFromDev.LED,
+          Weight_Flag:dataFromDev.Weight_Flag,
+          Eat:dataFromDev.Eat,
+          Water:dataFromDev.Water,
+          UVA:dataFromDev.UVA,
+          UVB:dataFromDev.UVB,
         });
 
       }catch(error){
