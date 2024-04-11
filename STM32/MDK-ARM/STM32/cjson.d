@@ -1,0 +1,9 @@
+stm32\cjson.o: ..\Core\Src\cJSON.c
+stm32\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+stm32\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+stm32\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+stm32\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+stm32\cjson.o: ../Core/Inc/cJSON.h

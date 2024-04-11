@@ -35,7 +35,6 @@ extern "C" {
 extern UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN Private defines */
-void Usart_SendString(UART_HandleTypeDef USARTx, unsigned char *str, unsigned short len);
 
 /* USER CODE END Private defines */
 

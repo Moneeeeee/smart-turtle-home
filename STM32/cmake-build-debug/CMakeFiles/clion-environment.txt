@@ -1,4 +1,0 @@
-ToolSet: 6.0 w64 (local)@C:\Users\Monee\Documents\Programming Language Learning\mingw64\x86_64-w64-mingw32
-Options: 
-
-Options:

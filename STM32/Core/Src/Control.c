@@ -4,16 +4,16 @@
 #include "Control.h"
 
 uint8_t Lumen_Flag = 0;
-uint32_t Lumen_Thresold = 30;
+uint32_t Lumen_Thresold = 60;
 
 uint8_t TDS_Flag = 0;
-uint32_t TDS_Thresold = 30;
+uint32_t TDS_Thresold = 10;
 
 uint8_t temperature_Flag = 0;
 uint32_t temperature_Thresold = 16;
 
 uint8_t Weight_Flag = 0;
-uint32_t Weight_Thresold = 300;
+uint32_t Weight_Thresold = 800;
 
 uint8_t Eat_Flag = 0;
 
@@ -25,6 +25,7 @@ void Flag_Set(void){
     //光照阈值
     if (Lumen > Lumen_Thresold){
         Lumen_Flag = 1;
+
     }else{
         Lumen_Flag = 0;
     };
@@ -58,10 +59,10 @@ void Flag_Set(void){
 
 void Data_Get(void){
 
-    Read_Weigh();
+//    Read_Weigh();
     TDS_Check();
     Value_GY30();
-    temperature = 25;
+//    temperature = 20;
 //    DS18B20_Get_Temperature();
 }
 

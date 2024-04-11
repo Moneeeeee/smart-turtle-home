@@ -104,9 +104,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
   MX_ADC1_Init();
   MX_TIM1_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 //  RetargetInit(&huart1);
 
@@ -116,42 +116,51 @@ int main(void)
     BH1750_Init();
 //    DS18B20_Init();
 
-  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
-  ESP01S_Init();  //8266初始
-  while(OneNet_DevLink())  //接入onenet
-  ESP01S_Clear();    //*/
-  OneNet_Subscribe(devSubTopic, 1);
+//  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
+//  ESP01S_Init();  //8266初始
+//  while(OneNet_DevLink())  //接入onenet
+//  ESP01S_Clear();    //*/
+//  OneNet_Subscribe(devSubTopic, 1);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,GPIO_PIN_RESET);//BEEP
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,GPIO_PIN_RESET);//BEEP
   while (1)
   {
 
-//      HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_10);
-        //OLED显示集成函数
+//        //OLED显示集成函数
         OLED_Data_Show();
-        //数据采集函数（水温、水质、光照强度等）
+//        //数据采集函数（水温�?�水质�?�光照强度等�????????
         Data_Get();
-        //轮询设置标志位
+//        //轮询设置标志�????????
         Flag_Set();
 
-        HAL_Delay(10);
-
-      if(++timeCount >= 10){
-          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d,\"Weight_Flag\":%d,\"Weight\":%d}",
-                  (uint32_t )temperature,(uint32_t)TDS,(uint32_t )Lumen,Weight_Flag,(uint32_t )Weight);
-          OneNet_Publish(devPubTopic, PUB_BUF);
-
-          timeCount = 0;
-          ESP01S_Clear();
+      if (TDS_Flag == 1){
+          HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);//BEEP
+          HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,GPIO_PIN_SET);//BEEP
+          HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,GPIO_PIN_SET);//BEEP
+      }else {
+          HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+          HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,GPIO_PIN_RESET);//BEEP
+          HAL_GPIO_WritePin(GPIOA,GPIO_PIN_11,GPIO_PIN_RESET);//BEEP
       }
-      dataPtr = ESP01S_GetIPD(3);
-      if(dataPtr != NULL)
-          OneNet_RevPro(dataPtr);
-
+        HAL_Delay(10);
+//
+//      if(++timeCount >= 10){
+//          sprintf(PUB_BUF,"{\"Temp\":%d,\"TDS\":%d,\"Lumen\":%d,\"Weight_Flag\":%d,\"Weight\":%d}",
+//                  (uint32_t )temperature,(uint32_t)TDS,(uint32_t )Lumen,Weight_Flag,(uint32_t )Weight);
+//          OneNet_Publish(devPubTopic, PUB_BUF);
+//
+//          timeCount = 0;
+//          ESP01S_Clear();
+//      }
+//      dataPtr = ESP01S_GetIPD(3);
+//      if(dataPtr != NULL)
+//          OneNet_RevPro(dataPtr);
+//
 
     /* USER CODE END WHILE */
 
@@ -221,7 +230,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         ESP01S_buf[ESP01S_cnt++] = aRxBuffer;   //接收数据转存
     }
 
-    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�?????????????????????????????????????????????????????
+    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�?????????????????????????????????????????????????????????????
 }
 
 /* USER CODE END 4 */

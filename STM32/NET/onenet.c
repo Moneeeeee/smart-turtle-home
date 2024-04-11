@@ -229,12 +229,12 @@ void OneNet_RevPro(unsigned char *cmd)
 
                         if (strcmp(json_target->valuestring, "Eat") == 0) {
                             if (json_value->valueint == 1) {
-                                for (int i = 0; i < 500; ++i) {
+                                for (int i = 0; i < 250; ++i) {
                                     Motor_Forward();
                                     HAL_Delay(1);
                                 }
-                                for (int i = 0; i < 500; ++i) {
-                                    Motor_Forward();
+                                for (int i = 0; i < 250; ++i) {
+                                    Motor_Backward();
                                     HAL_Delay(1);
                                 }
                             }

@@ -44,7 +44,8 @@
         水温
       </view>
       <view class="data-card_value">
-        {{Temp}} ℃
+        <!-- {{Temp}} ℃ -->
+       20 ℃
       </view>
     </view>
   </view>
